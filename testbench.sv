@@ -1,10 +1,10 @@
-module OR_gate_tb;
+module AND_gate_tb;
 
 reg a;
 reg b;
 wire y;
 
-OR_gate uut(
+AND_gate uut(
     .a(a),
     .b(b),
     .y(y)
@@ -12,26 +12,26 @@ OR_gate uut(
 
 initial begin
 
-    $dumpfile("dump.vcd");
-    $dumpvars(0, OR_gate_tb);
+$dumpfile("dump.vcd");
+$dumpvars(0, AND_gate_tb);
 
-    a=0;
-    b=0;
-    #10;
+a=0;
+b=0;
+#10;
 
-    a=0;
-    b=1;
-    #10;
+a=0;
+b=1;
+#10;
 
-    a=1;
-    b=0;
-    #10;
+a=1;
+b=0;
+#10;
 
-    a=1;
-    b=1;
-    #10;
+a=1;
+b=1;
+#10;
 
-    $finish;
+$finish;
 
 end
 

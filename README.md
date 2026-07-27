@@ -1,19 +1,19 @@
-# OR Gate Verilog Design
+# AND Gate Verilog Design
 
 ## Description
-Implementation of a basic OR gate using Verilog HDL.
+Implementation of a basic AND gate using Verilog HDL.
 
 ## Logic Equation
 
-Y = A | B
+Y = A & B
 
 ## Truth Table
 
 | A | B | Y |
 |---|---|---|
 |0|0|0|
-|0|1|1|
-|1|0|1|
+|0|1|0|
+|1|0|0|
 |1|1|1|
 
 ## Simulation Tool
@@ -21,6 +21,5 @@ Y = A | B
 - Icarus Verilog
 
 ## Files
-
-- design.sv : OR gate module
+- design.sv : AND gate module
 - testbench.sv : Simulation testbench
